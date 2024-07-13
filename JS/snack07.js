@@ -7,11 +7,12 @@ Scrivere un programma che stampi la tabellina del 2, fino al numero 1000.
 Modificate poi il programma in modo che venga chiesto all’utente il numero massimo consentito, e stampare tutta la tabellina del 2 fino al numero inserito.
 */
 
-// Creo un ciclo che stampi i numeri da 1 a 1000
-for (let i = 0; i <= 1000; i++) {
+// Dichiaro e assegno una costante in cui chiedo il numero massimo all'utente
+const numMax = parseInt(prompt('Inserisci il numero massimo da stampare per calcolare la tabellina del 2'))
+// Dichiaro e assegno una costante in cui indico che il numIter è numMax / 2
+const numIter = numMax / 2
 
-    // Se i è multiplo di 2
-    if (i % 2 == 0) {
-        console.log(i)
-    }
+// Creo un ciclo in cui indico al programma che arrivati al numero inserito dall'utente si può fermare
+for (let = i = 0; i <= numIter; i++) {
+    console.log('2 * ' + i + ' = ' + (2 * i))
 }
